@@ -31,7 +31,6 @@ const dataConfig = {
 function App() {
 
   generateData()
-
   // We will use this variable to access the chart in the DOM
   const theChart = useRef(null)
 
@@ -45,7 +44,7 @@ function App() {
       <Bar
         data={dataConfig}
         options={null}
-        ref={theChart} // When Bar gets rendered, theChart gets assigned to its DOM element. This allows us to access the chart's update method.
+        ref={theChart} // When Bar gets rendered, theChart gets assigned to its DOM element. This allows us to access the chart's update method!
       />
       <button onClick={updateChart}>Update the chart</button>
     </div>
