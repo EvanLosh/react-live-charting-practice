@@ -41,12 +41,14 @@ function App() {
 
   return (
     <div className="App">
-      <Bar
-        data={dataConfig}
-        options={null}
-        ref={theChart} // When Bar gets rendered, theChart gets assigned to its DOM element. This allows us to access the chart's update method!
-      />
-      <button onClick={updateChart}>Update the chart</button>
+      <div style={{ padding: '40px' }}>
+        <Bar
+          data={dataConfig}
+          options={null}
+          ref={theChart} // When Bar gets rendered, theChart gets assigned to its DOM element. This allows us to access the chart's update method!
+        />
+        <button onClick={updateChart}>Update the chart</button>
+      </div>
     </div>
   );
 }
